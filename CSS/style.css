@@ -1,0 +1,220 @@
+
+/* Navigation Start */
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #DEDFCF;
+  }
+  
+  li {
+    float: left;
+    background-color:#DEDFCF ;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #DEDFCF ;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #CFB951;
+  }
+  
+  .active {
+    background-color: none;
+  }
+
+  /* Hero */
+
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+ /* Rows and Columns */
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex; 
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 60px;
+    height: 450px; 
+  }
+
+   /* Body Text */
+
+   h1 {
+       color: #9C8160 ;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: x-large;
+       line-height: 50px;
+   }
+
+   h2 {
+    color: #9C8160 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 100px;
+
+
+}
+
+   p {
+    color: white;
+    font-family: 'times new roman';
+    font-size: 14px;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'times new roman';
+        font-size: large;
+        line-height: 25px;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+
+
+
+
+   /* Bouncing Arrow */
+
+
+    body {
+        background: white;
+      }
+      .downArrow{
+          top: 20%;
+          bottom:20%;
+          left: 50%;
+          right: 50%;
+          text-align: center;
+        }
+      .bounce {
+          -moz-animation: bounce 3s infinite;
+          -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
+      }
+      @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+
+   /* Text and Image */
+
+
+#categoryGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "bookcases bedroom patio"
+    "couches couches patio"
+    "desks desks desks"
+    ;
+  }
+  
+  #bookcases {
+    grid-area: bookcases;
+    background-color: #DEDFCF;
+  
+  }
+  #bedroom {
+    grid-area: bedroom;
+    background-image: url("../Images/blog\ home\ highlight\ 1\ copy.png");
+  }
+  
+
+  
+  .categoryGridArea1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .categoryGridArea2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+#grid-item {
+    color: black;
+
+}
+
