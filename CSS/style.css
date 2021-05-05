@@ -1,44 +1,70 @@
 
 /* Navigation Start */
 
-ul {
+.navtext li {
+    float: left;
+    padding-right: 50px;
+    background-color:#DEDFCF ;
+    padding-top: 20px;
+    padding-bottom: none;
+}
 
+
+
+.navtext ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     background-color: #DEDFCF;
-  }
+}
   
-  li {
-    float: left;
-    background-color:#DEDFCF ;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: none;
-  }
-  
-  li a {
+ .navtext li a {
     display: block;
-    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
-    background-color: #DEDFCF ;
-  }
+    background-color: #DEDFCF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color:black;
+}
   
-  li a:hover:not(.active) {
-    background-color: #CFB951;
-  }
+  .navtext li a:hover:not(.active) {
+    background-color:none;
+    color: white;
+}
   
-  .active {
-    background-color: none;
-  }
+  .navtext a.active {
+    border-bottom: 3px solid #CFB951;
+}
+
+  .logo {
+    margin-top: 50px;
+      max-height: 75px;
+      padding-top: 10px;
+      width: auto;
+      display: inline-block;
+}
+
+.navtext hr {
+    background-color: black;
+    margin-top: 60px;
+    height: 1px;
+    border-width: 0px; 
+    width: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+
+}
+  
 
   /* Hero */
 
   .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -50,14 +76,21 @@ ul {
   
   .row {
     display: flex; 
+    border-top: none;
   }
   
   /* Create two equal columns that sits next to each other */
+  
   .column {
     flex: 50%;
-    padding: 60px;
-    height: 450px; 
+    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 500px; 
+    background-color:  #CFB951;
   }
+
 
    /* Body Text */
 
@@ -75,8 +108,6 @@ ul {
     line-height: 50px;
     text-align: center;
     padding-top: 100px;
-
-
 }
 
    p {
@@ -166,55 +197,105 @@ ul {
         }
       }
 
-   /* Text and Image */
+   /* Case Study 1 */
 
 
-#categoryGrid {
-    margin: 0px;
+ #casestudygridleftjustify {
     display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 65%;
+    grid-template-columns: 35% 65%;
+    padding-bottom: 1px;
+    height: 600px;
     grid-template-areas:
-    "bookcases bedroom patio"
-    "couches couches patio"
-    "desks desks desks"
+    "casestudy1"
+    "casestudy1img"
+    "casestudy1img"
     ;
   }
   
-  #bookcases {
-    grid-area: bookcases;
-    background-color: #DEDFCF;
-  
+  #casestudy1 {
+    grid-area: "casestudy1";
+    background-color:#DEDFCF;
   }
-  #bedroom {
-    grid-area: bedroom;
-    background-image: url("../Images/blog\ home\ highlight\ 1\ copy.png");
+
+  #casestudy1img {
+    grid-area: "casestudy1img";
+    background-image: url("../Images/Hello-Nat-Design-Studio-and-Creative-Consultancy-Plantiful_9.png");
   }
+
   
+
+  .link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+    font-size: small;
+    text-transform: italic;
+    letter-spacing: 2px;
+    color: white;
+}
+
+  .heading {
+    color: white;
+    padding-bottom: 20px;
+  }
 
   
   .categoryGridArea1 {
+    height: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
+    margin: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
     cursor: pointer;
     display: grid;
     align-content: end;
   }
 
   .categoryGridArea2 {
+    height: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
+    margin: 0px;
     cursor: pointer;
     display: grid;
     align-content: end;
   }
 
 #grid-item {
-    color: black;
+    color: white;
+    width: 5px;
 
 }
 
+hr  {
+    background-color: white;
+    height: 1px;
+    border-width: 0px; 
+    width: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+
+}
+
+
+   /* Case Study 2 */
+
+
+   #casestudygridrightjustify {
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 65% 35%;
+    padding-bottom: 1px;
+    height: 600px;
+    grid-template-areas:
+    "casestudy1"
+    "casestudy1img"
+    "casestudy1img"
+    ;
+  }
+
+  
